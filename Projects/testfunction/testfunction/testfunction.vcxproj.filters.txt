@@ -1,0 +1,141 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\dji_ack.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dji_broadcast.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dji_camera.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dji_command.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dji_control.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dji_error.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dji_gimbal.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dji_hardware_sync.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dji_hotpoint.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dji_mfio.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dji_mission_manager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dji_mobile_communication.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dji_subscription.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dji_vehicle.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dji_version.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dji_virtual_rc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dji_waypoint.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="inc\dji_ack.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\dji_broadcast.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\dji_camera.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\dji_command.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\dji_control.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\dji_error.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\dji_gimbal.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\dji_hardware_sync.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\dji_hotpoint.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\dji_mfio.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\dji_mission_base.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\dji_mission_manager.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\dji_mission_type.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\dji_mobile_communication.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\dji_status.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\dji_subscription.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\dji_telemetry.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\dji_type.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\dji_vehicle.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\dji_vehicle_callback.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\dji_version.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\dji_virtual_rc.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\dji_waypoint.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

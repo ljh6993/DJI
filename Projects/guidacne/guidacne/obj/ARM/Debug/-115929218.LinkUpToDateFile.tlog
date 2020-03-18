@@ -1,0 +1,1 @@
+g++ -o "/home/pi/projects/guidacne/bin/ARM/Debug/guidacne.out" -Wl,--no-undefined -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack /home/pi/projects/guidacne/obj/ARM/Debug/DJI_utility.o /home/pi/projects/guidacne/obj/ARM/Debug/main.o -lpthread -lDJI_guidance -l"usb-1.0"

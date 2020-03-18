@@ -1,0 +1,51 @@
+﻿  Cleaning remote project directory
+  Validating architecture
+  Validating sources
+  Copying sources remotely to '192.168.137.64'
+  Starting remote build
+  Compiling sources:
+  dji_linux_environment.cpp
+C:\Users\15104\Documents\Visual Studio 2017\Projects\Project3\Project3\dji_linux_environment.cpp(102,15): warning : unused variable ‘id’ [-Wunused-variable]
+  dji_linux_helpers.cpp
+/usr/local/include/djiosdk/posix_thread.hpp(6,54): warning : "/*" within comment [-Wcomment]
+/usr/local/include/djiosdk/linux_serial_device.hpp(75,3): warning : no return statement in function returning non-void [-Wreturn-type]
+/usr/local/include/djiosdk/dji_vehicle.hpp(77,12): warning : ‘DJI::OSDK::callbackId’ defined but not used [-Wunused-variable]
+  flight_control_sample.cpp
+/usr/local/include/djiosdk/posix_thread.hpp(6,54): warning : "/*" within comment [-Wcomment]
+/usr/local/include/djiosdk/linux_serial_device.hpp(75,3): warning : no return statement in function returning non-void [-Wreturn-type]
+C:\Users\15104\Documents\Visual Studio 2017\Projects\Project3\Project3\flight_control_sample.hpp(73,56): warning : conversion to ‘float’ alters ‘double’ constant value [-Wfloat-conversion]
+C:\Users\15104\Documents\Visual Studio 2017\Projects\Project3\Project3\flight_control_sample.cpp(71,63): warning : conversion to ‘uint16_t {aka short unsigned int}’ from ‘int’ may alter its value [-Wconversion]
+C:\Users\15104\Documents\Visual Studio 2017\Projects\Project3\Project3\flight_control_sample.cpp(263,27): warning : conversion to ‘DJI::OSDK::float32_t {aka float}’ from ‘double’ may alter its value [-Wfloat-conversion]
+C:\Users\15104\Documents\Visual Studio 2017\Projects\Project3\Project3\flight_control_sample.cpp(333,63): warning : conversion to ‘uint16_t {aka short unsigned int}’ from ‘int’ may alter its value [-Wconversion]
+C:\Users\15104\Documents\Visual Studio 2017\Projects\Project3\Project3\flight_control_sample.cpp(430,21): warning : conversion to ‘float’ alters ‘double’ constant value [-Wfloat-conversion]
+C:\Users\15104\Documents\Visual Studio 2017\Projects\Project3\Project3\flight_control_sample.cpp(434,22): warning : conversion to ‘float’ alters ‘double’ constant value [-Wfloat-conversion]
+C:\Users\15104\Documents\Visual Studio 2017\Projects\Project3\Project3\flight_control_sample.cpp(443,30): warning : conversion to ‘float’ from ‘int’ may alter its value [-Wconversion]
+C:\Users\15104\Documents\Visual Studio 2017\Projects\Project3\Project3\flight_control_sample.cpp(443,62): warning : conversion to ‘float’ from ‘int’ may alter its value [-Wconversion]
+C:\Users\15104\Documents\Visual Studio 2017\Projects\Project3\Project3\flight_control_sample.cpp(446,28): warning : conversion to ‘float’ from ‘int’ may alter its value [-Wconversion]
+C:\Users\15104\Documents\Visual Studio 2017\Projects\Project3\Project3\flight_control_sample.cpp(446,65): warning : conversion to ‘float’ from ‘int’ may alter its value [-Wconversion]
+C:\Users\15104\Documents\Visual Studio 2017\Projects\Project3\Project3\flight_control_sample.cpp(451,30): warning : conversion to ‘float’ from ‘int’ may alter its value [-Wconversion]
+C:\Users\15104\Documents\Visual Studio 2017\Projects\Project3\Project3\flight_control_sample.cpp(451,62): warning : conversion to ‘float’ from ‘int’ may alter its value [-Wconversion]
+C:\Users\15104\Documents\Visual Studio 2017\Projects\Project3\Project3\flight_control_sample.cpp(454,28): warning : conversion to ‘float’ from ‘int’ may alter its value [-Wconversion]
+C:\Users\15104\Documents\Visual Studio 2017\Projects\Project3\Project3\flight_control_sample.cpp(454,65): warning : conversion to ‘float’ from ‘int’ may alter its value [-Wconversion]
+C:\Users\15104\Documents\Visual Studio 2017\Projects\Project3\Project3\flight_control_sample.cpp(471,56): warning : conversion to ‘DJI::OSDK::float32_t {aka float}’ from ‘double’ may alter its value [-Wfloat-conversion]
+C:\Users\15104\Documents\Visual Studio 2017\Projects\Project3\Project3\flight_control_sample.cpp(507,14): warning : conversion to ‘float’ from ‘double’ may alter its value [-Wfloat-conversion]
+C:\Users\15104\Documents\Visual Studio 2017\Projects\Project3\Project3\flight_control_sample.cpp(511,14): warning : conversion to ‘float’ from ‘double’ may alter its value [-Wfloat-conversion]
+C:\Users\15104\Documents\Visual Studio 2017\Projects\Project3\Project3\flight_control_sample.cpp(626,63): warning : conversion to ‘uint16_t {aka short unsigned int}’ from ‘int’ may alter its value [-Wconversion]
+C:\Users\15104\Documents\Visual Studio 2017\Projects\Project3\Project3\flight_control_sample.cpp(816,27): warning : conversion to ‘DJI::OSDK::float32_t {aka float}’ from ‘double’ may alter its value [-Wfloat-conversion]
+C:\Users\15104\Documents\Visual Studio 2017\Projects\Project3\Project3\flight_control_sample.cpp(817,37): warning : conversion to ‘DJI::OSDK::float32_t {aka float}’ from ‘double’ may alter its value [-Wfloat-conversion]
+C:\Users\15104\Documents\Visual Studio 2017\Projects\Project3\Project3\flight_control_sample.cpp(826,32): warning : conversion to ‘DJI::OSDK::float32_t {aka float}’ from ‘double’ may alter its value [-Wfloat-conversion]
+C:\Users\15104\Documents\Visual Studio 2017\Projects\Project3\Project3\flight_control_sample.cpp(827,42): warning : conversion to ‘DJI::OSDK::float32_t {aka float}’ from ‘double’ may alter its value [-Wfloat-conversion]
+C:\Users\15104\Documents\Visual Studio 2017\Projects\Project3\Project3\flight_control_sample.cpp(851,15): warning : conversion to ‘DJI::OSDK::float32_t {aka float}’ from ‘double’ may alter its value [-Wfloat-conversion]
+C:\Users\15104\Documents\Visual Studio 2017\Projects\Project3\Project3\flight_control_sample.cpp(852,16): warning : conversion to ‘DJI::OSDK::float32_t {aka float}’ from ‘double’ may alter its value [-Wfloat-conversion]
+C:\Users\15104\Documents\Visual Studio 2017\Projects\Project3\Project3\flight_control_sample.cpp(853,16): warning : conversion to ‘DJI::OSDK::float32_t {aka float}’ from ‘double’ may alter its value [-Wfloat-conversion]
+/usr/local/include/djiosdk/dji_vehicle.hpp(77,12): warning : ‘DJI::OSDK::callbackId’ defined but not used [-Wunused-variable]
+  main.cpp
+/usr/local/include/djiosdk/posix_thread.hpp(6,54): warning : "/*" within comment [-Wcomment]
+/usr/local/include/djiosdk/linux_serial_device.hpp(75,3): warning : no return statement in function returning non-void [-Wreturn-type]
+C:\Users\15104\Documents\Visual Studio 2017\Projects\Project3\Project3\flight_control_sample.hpp(73,56): warning : conversion to ‘float’ alters ‘double’ constant value [-Wfloat-conversion]
+C:\Users\15104\Documents\Visual Studio 2017\Projects\Project3\Project3\main.cpp(80,48): warning : conversion to ‘float’ alters ‘double’ constant value [-Wfloat-conversion]
+C:\Users\15104\Documents\Visual Studio 2017\Projects\Project3\Project3\main.cpp(81,50): warning : conversion to ‘float’ alters ‘double’ constant value [-Wfloat-conversion]
+C:\Users\15104\Documents\Visual Studio 2017\Projects\Project3\Project3\main.cpp(82,49): warning : conversion to ‘float’ alters ‘double’ constant value [-Wfloat-conversion]
+/usr/local/include/djiosdk/dji_vehicle.hpp(77,12): warning : ‘DJI::OSDK::callbackId’ defined but not used [-Wunused-variable]
+  Linking objects
+  Project3.vcxproj -> c:\Users\15104\documents\visual studio 2017\Projects\Project3\Project3\bin\ARM\Debug\Project3.out

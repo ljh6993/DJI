@@ -1,0 +1,125 @@
+﻿  Cleaning remote project directory
+  Validating architecture
+  Validating sources
+  Copying sources remotely to '192.168.137.64'
+  Starting remote build
+  Compiling sources:
+  control_l.cpp
+/usr/local/include/djiosdk/posix_thread.hpp(6,54): warning : "/*" within comment [-Wcomment]
+/usr/local/include/djiosdk/linux_serial_device.hpp(75,3): warning : no return statement in function returning non-void [-Wreturn-type]
+C:\Users\15104\Documents\Visual Studio 2017\Projects\Project2\Project2\control_l.h(42,31): warning : conversion to ‘float’ alters ‘double’ constant value [-Wfloat-conversion]
+C:\Users\15104\Documents\Visual Studio 2017\Projects\Project2\Project2\control_l.cpp(61,15): warning : conversion to ‘DJI::OSDK::float32_t {aka float}’ from ‘double’ may alter its value [-Wfloat-conversion]
+C:\Users\15104\Documents\Visual Studio 2017\Projects\Project2\Project2\control_l.cpp(13,7): warning : unused variable ‘pkgIndex’ [-Wunused-variable]
+C:\Users\15104\Documents\Visual Studio 2017\Projects\Project2\Project2\control_l.cpp(180,20): warning : conversion to ‘float’ alters ‘double’ constant value [-Wfloat-conversion]
+C:\Users\15104\Documents\Visual Studio 2017\Projects\Project2\Project2\control_l.cpp(186,20): warning : conversion to ‘float’ alters ‘double’ constant value [-Wfloat-conversion]
+C:\Users\15104\Documents\Visual Studio 2017\Projects\Project2\Project2\control_l.cpp(191,28): warning : conversion to ‘float’ from ‘int’ may alter its value [-Wconversion]
+C:\Users\15104\Documents\Visual Studio 2017\Projects\Project2\Project2\control_l.cpp(191,60): warning : conversion to ‘float’ from ‘int’ may alter its value [-Wconversion]
+C:\Users\15104\Documents\Visual Studio 2017\Projects\Project2\Project2\control_l.cpp(194,24): warning : conversion to ‘float’ from ‘int’ may alter its value [-Wconversion]
+C:\Users\15104\Documents\Visual Studio 2017\Projects\Project2\Project2\control_l.cpp(194,61): warning : conversion to ‘float’ from ‘int’ may alter its value [-Wconversion]
+C:\Users\15104\Documents\Visual Studio 2017\Projects\Project2\Project2\control_l.cpp(199,28): warning : conversion to ‘float’ from ‘int’ may alter its value [-Wconversion]
+C:\Users\15104\Documents\Visual Studio 2017\Projects\Project2\Project2\control_l.cpp(199,60): warning : conversion to ‘float’ from ‘int’ may alter its value [-Wconversion]
+C:\Users\15104\Documents\Visual Studio 2017\Projects\Project2\Project2\control_l.cpp(202,24): warning : conversion to ‘float’ from ‘int’ may alter its value [-Wconversion]
+C:\Users\15104\Documents\Visual Studio 2017\Projects\Project2\Project2\control_l.cpp(202,61): warning : conversion to ‘float’ from ‘int’ may alter its value [-Wconversion]
+C:\Users\15104\Documents\Visual Studio 2017\Projects\Project2\Project2\control_l.cpp(214,63): warning : conversion to ‘DJI::OSDK::float32_t {aka float}’ from ‘double’ may alter its value [-Wfloat-conversion]
+C:\Users\15104\Documents\Visual Studio 2017\Projects\Project2\Project2\control_l.cpp(146,6): warning : unused variable ‘responseTimeout’ [-Wunused-variable]
+C:\Users\15104\Documents\Visual Studio 2017\Projects\Project2\Project2\control_l.cpp(151,7): warning : unused variable ‘func’ [-Wunused-variable]
+C:\Users\15104\Documents\Visual Studio 2017\Projects\Project2\Project2\control_l.cpp(156,22): warning : variable ‘localOffset’ set but not used [-Wunused-but-set-variable]
+C:\Users\15104\Documents\Visual Studio 2017\Projects\Project2\Project2\control_l.cpp(163,9): warning : unused variable ‘yawThresholdInRad’ [-Wunused-variable]
+C:\Users\15104\Documents\Visual Studio 2017\Projects\Project2\Project2\control_l.cpp(165,24): warning : unused variable ‘broadcastQ’ [-Wunused-variable]
+C:\Users\15104\Documents\Visual Studio 2017\Projects\Project2\Project2\control_l.cpp(166,9): warning : unused variable ‘yawInRad’ [-Wunused-variable]
+C:\Users\15104\Documents\Visual Studio 2017\Projects\Project2\Project2\control_l.cpp(172,8): warning : unused variable ‘withinBoundsCounter’ [-Wunused-variable]
+C:\Users\15104\Documents\Visual Studio 2017\Projects\Project2\Project2\control_l.cpp(173,8): warning : unused variable ‘outOfBounds’ [-Wunused-variable]
+C:\Users\15104\Documents\Visual Studio 2017\Projects\Project2\Project2\control_l.cpp(174,8): warning : unused variable ‘brakeCounter’ [-Wunused-variable]
+C:\Users\15104\Documents\Visual Studio 2017\Projects\Project2\Project2\control_l.cpp(176,8): warning : variable ‘xCmd’ set but not used [-Wunused-but-set-variable]
+C:\Users\15104\Documents\Visual Studio 2017\Projects\Project2\Project2\control_l.cpp(176,14): warning : variable ‘yCmd’ set but not used [-Wunused-but-set-variable]
+C:\Users\15104\Documents\Visual Studio 2017\Projects\Project2\Project2\control_l.cpp(176,20): warning : variable ‘zCmd’ set but not used [-Wunused-but-set-variable]
+C:\Users\15104\Documents\Visual Studio 2017\Projects\Project2\Project2\control_l.cpp(180,8): warning : variable ‘zDeadband’ set but not used [-Wunused-but-set-variable]
+C:\Users\15104\Documents\Visual Studio 2017\Projects\Project2\Project2\control_l.cpp(269,14): warning : conversion to ‘DJI::OSDK::float32_t {aka float}’ from ‘double’ may alter its value [-Wfloat-conversion]
+C:\Users\15104\Documents\Visual Studio 2017\Projects\Project2\Project2\control_l.cpp(270,15): warning : conversion to ‘DJI::OSDK::float32_t {aka float}’ from ‘double’ may alter its value [-Wfloat-conversion]
+C:\Users\15104\Documents\Visual Studio 2017\Projects\Project2\Project2\control_l.cpp(271,15): warning : conversion to ‘DJI::OSDK::float32_t {aka float}’ from ‘double’ may alter its value [-Wfloat-conversion]
+/usr/local/include/djiosdk/dji_vehicle.hpp(77,12): warning : ‘DJI::OSDK::callbackId’ defined but not used [-Wunused-variable]
+C:\Users\15104\Documents\Visual Studio 2017\Projects\Project2\Project2\control_l.cpp(99,75): warning : ‘pkgIndex’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+  dji_linux_environment.cpp
+C:\Users\15104\Documents\Visual Studio 2017\Projects\Project2\Project2\dji_linux_environment.cpp(102,15): warning : unused variable ‘id’ [-Wunused-variable]
+  dji_linux_helpers.cpp
+/usr/local/include/djiosdk/posix_thread.hpp(6,54): warning : "/*" within comment [-Wcomment]
+/usr/local/include/djiosdk/linux_serial_device.hpp(75,3): warning : no return statement in function returning non-void [-Wreturn-type]
+/usr/local/include/djiosdk/dji_vehicle.hpp(77,12): warning : ‘DJI::OSDK::callbackId’ defined but not used [-Wunused-variable]
+  main.cpp
+/usr/local/include/djiosdk/posix_thread.hpp(6,54): warning : "/*" within comment [-Wcomment]
+/usr/local/include/djiosdk/linux_serial_device.hpp(75,3): warning : no return statement in function returning non-void [-Wreturn-type]
+C:\Users\15104\Documents\Visual Studio 2017\Projects\Project2\Project2\control_l.h(42,31): warning : conversion to ‘float’ alters ‘double’ constant value [-Wfloat-conversion]
+/usr/local/include/djiosdk/dji_vehicle.hpp(77,12): warning : ‘DJI::OSDK::callbackId’ defined but not used [-Wunused-variable]
+  Linking objects
+C:\Users\15104\Documents\Visual Studio 2017\Projects\Project2\Project2\obj\ARM\Debug\control_l.o: In function `monitoredTakeoff(DJI::OSDK: : error : 
+C:\Users\15104\Documents\Visual Studio 2017\Projects\Project2\Project2\control_l.cpp:14: undefined reference to `DJI::OSDK::Control : error : takeoff(int)'
+C:\Users\15104\Documents\Visual Studio 2017\Projects\Project2\Project2\control_l.cpp:15: undefined reference to `DJI::OSDK::ACK::getError(DJI::OSDK::ACK : error : ErrorCode)'
+C:\Users\15104\Documents\Visual Studio 2017\Projects\Project2\Project2\control_l.cpp:17: undefined reference to `DJI::OSDK::ACK::getErrorCodeMessage(DJI::OSDK::ACK : error : ErrorCode, char const*)'
+C:\Users\15104\Documents\Visual Studio 2017\Projects\Project2\Project2\control_l.cpp:24: undefined reference to `DJI::OSDK::DataBroadcast : error : getStatus()'
+C:\Users\15104\Documents\Visual Studio 2017\Projects\Project2\Project2\control_l.cpp:38: undefined reference to `DJI::OSDK::DataBroadcast : error : getStatus()'
+C:\Users\15104\Documents\Visual Studio 2017\Projects\Project2\Project2\control_l.cpp:55: undefined reference to `DJI::OSDK::DataBroadcast : error : getGlobalPosition()'
+C:\Users\15104\Documents\Visual Studio 2017\Projects\Project2\Project2\control_l.cpp:60: undefined reference to `DJI::OSDK::DataBroadcast : error : getGlobalPosition()'
+C:\Users\15104\Documents\Visual Studio 2017\Projects\Project2\Project2\control_l.cpp:68: undefined reference to `DJI::OSDK::ACK : error : SUCCESS'
+C:\Users\15104\Documents\Visual Studio 2017\Projects\Project2\Project2\obj\ARM\Debug\control_l.o: In function `monitoredLanding(DJI::OSDK: : error : 
+C:\Users\15104\Documents\Visual Studio 2017\Projects\Project2\Project2\control_l.cpp:76: undefined reference to `DJI::OSDK::Control : error : land(int)'
+C:\Users\15104\Documents\Visual Studio 2017\Projects\Project2\Project2\control_l.cpp:77: undefined reference to `DJI::OSDK::ACK::getError(DJI::OSDK::ACK : error : ErrorCode)'
+C:\Users\15104\Documents\Visual Studio 2017\Projects\Project2\Project2\control_l.cpp:79: undefined reference to `DJI::OSDK::ACK::getErrorCodeMessage(DJI::OSDK::ACK : error : ErrorCode, char const*)'
+C:\Users\15104\Documents\Visual Studio 2017\Projects\Project2\Project2\control_l.cpp:85: undefined reference to `DJI::OSDK::Vehicle : error : isM100()'
+C:\Users\15104\Documents\Visual Studio 2017\Projects\Project2\Project2\control_l.cpp:87: undefined reference to `DJI::OSDK::DataBroadcast : error : getStatus()'
+C:\Users\15104\Documents\Visual Studio 2017\Projects\Project2\Project2\control_l.cpp:99: undefined reference to `DJI::OSDK::DataSubscription : error : removePackage(int, int)'
+C:\Users\15104\Documents\Visual Studio 2017\Projects\Project2\Project2\control_l.cpp:100: undefined reference to `DJI::OSDK::ACK::getError(DJI::OSDK::ACK : error : ErrorCode)'
+C:\Users\15104\Documents\Visual Studio 2017\Projects\Project2\Project2\control_l.cpp:113: undefined reference to `DJI::OSDK::DataBroadcast : error : getStatus()'
+C:\Users\15104\Documents\Visual Studio 2017\Projects\Project2\Project2\control_l.cpp:123: undefined reference to `DJI::OSDK::DataBroadcast : error : getGlobalPosition()'
+C:\Users\15104\Documents\Visual Studio 2017\Projects\Project2\Project2\control_l.cpp:138: undefined reference to `DJI::OSDK::ACK : error : SUCCESS'
+C:\Users\15104\Documents\Visual Studio 2017\Projects\Project2\Project2\obj\ARM\Debug\control_l.o: In function `moveByPositionOffset(DJI::OSDK: : error : 
+C:\Users\15104\Documents\Visual Studio 2017\Projects\Project2\Project2\control_l.cpp:184: undefined reference to `DJI::OSDK::Vehicle : error : isM100()'
+C:\Users\15104\Documents\Visual Studio 2017\Projects\Project2\Project2\control_l.cpp:184: undefined reference to `DJI::OSDK::Vehicle : error : isLegacyM600()'
+C:\Users\15104\Documents\Visual Studio 2017\Projects\Project2\Project2\control_l.cpp:207: undefined reference to `DJI::OSDK::DataBroadcast : error : getGlobalPosition()'
+C:\Users\15104\Documents\Visual Studio 2017\Projects\Project2\Project2\control_l.cpp:214: undefined reference to `DJI::OSDK::Control : error : positionAndYawCtrl(float, float, float, float)'
+C:\Users\15104\Documents\Visual Studio 2017\Projects\Project2\Project2\control_l.cpp:248: undefined reference to `DJI::OSDK::ACK : error : FAIL'
+C:\Users\15104\Documents\Visual Studio 2017\Projects\Project2\Project2\control_l.cpp:248: undefined reference to `DJI::OSDK::ACK : error : SUCCESS'
+C:\Users\15104\Documents\Visual Studio 2017\Projects\Project2\Project2\obj\ARM\Debug\control_l.o: In function `startGlobalPositionBroadcast(DJI::OSDK: : error : 
+C:\Users\15104\Documents\Visual Studio 2017\Projects\Project2\Project2\control_l.cpp:312: undefined reference to `DJI::OSDK::DataBroadcast : error : setBroadcastFreq(unsigned char*, int)'
+C:\Users\15104\Documents\Visual Studio 2017\Projects\Project2\Project2\control_l.cpp:313: undefined reference to `DJI::OSDK::ACK::getError(DJI::OSDK::ACK : error : ErrorCode)'
+C:\Users\15104\Documents\Visual Studio 2017\Projects\Project2\Project2\control_l.cpp:315: undefined reference to `DJI::OSDK::ACK::getErrorCodeMessage(DJI::OSDK::ACK : error : ErrorCode, char const*)'
+C:\Users\15104\Documents\Visual Studio 2017\Projects\Project2\Project2\obj\ARM\Debug\control_l.o : error : 
+/usr/local/include/djiosdk/dji_version.hpp:84: undefined reference to `DJI::OSDK::Version : error : FW(unsigned char, unsigned char, unsigned char, unsigned char)'
+/usr/local/include/djiosdk/dji_version.hpp:93: undefined reference to `DJI::OSDK::Version : error : FW(unsigned char, unsigned char, unsigned char, unsigned char)'
+C:\Users\15104\Documents\Visual Studio 2017\Projects\Project2\Project2\obj\ARM\Debug\dji_linux_helpers.o: In function `LinuxSetup: : error : 
+C:\Users\15104\Documents\Visual Studio 2017\Projects\Project2\Project2\dji_linux_helpers.cpp:49: undefined reference to `DJI::OSDK::Vehicle : error : ~Vehicle()'
+C:\Users\15104\Documents\Visual Studio 2017\Projects\Project2\Project2\obj\ARM\Debug\dji_linux_helpers.o: In function `LinuxSetup: : error : 
+C:\Users\15104\Documents\Visual Studio 2017\Projects\Project2\Project2\dji_linux_helpers.cpp:131: undefined reference to `DJI::OSDK::Vehicle : error : Vehicle(char const*, unsigned int, bool, bool)'
+C:\Users\15104\Documents\Visual Studio 2017\Projects\Project2\Project2\dji_linux_helpers.cpp:134: undefined reference to `DJI::OSDK::ProtocolBase : error : getDriver() const'
+C:\Users\15104\Documents\Visual Studio 2017\Projects\Project2\Project2\dji_linux_helpers.cpp:137: undefined reference to `DJI::OSDK::Vehicle : error : ~Vehicle()'
+C:\Users\15104\Documents\Visual Studio 2017\Projects\Project2\Project2\dji_linux_helpers.cpp:148: undefined reference to `DJI::OSDK::Vehicle : error : getFwVersion() const'
+C:\Users\15104\Documents\Visual Studio 2017\Projects\Project2\Project2\dji_linux_helpers.cpp:149: undefined reference to `DJI::OSDK::Vehicle::activate(DJI::OSDK::Vehicle : error : ActivateData*, int)'
+C:\Users\15104\Documents\Visual Studio 2017\Projects\Project2\Project2\dji_linux_helpers.cpp:151: undefined reference to `DJI::OSDK::ACK::getError(DJI::OSDK::ACK : error : ErrorCode)'
+C:\Users\15104\Documents\Visual Studio 2017\Projects\Project2\Project2\dji_linux_helpers.cpp:153: undefined reference to `DJI::OSDK::ACK::getErrorCodeMessage(DJI::OSDK::ACK : error : ErrorCode, char const*)'
+C:\Users\15104\Documents\Visual Studio 2017\Projects\Project2\Project2\dji_linux_helpers.cpp:154: undefined reference to `DJI::OSDK::Vehicle : error : ~Vehicle()'
+C:\Users\15104\Documents\Visual Studio 2017\Projects\Project2\Project2\obj\ARM\Debug\dji_linux_helpers.o: In function `LinuxSetup: : error : 
+C:\Users\15104\Documents\Visual Studio 2017\Projects\Project2\Project2\dji_linux_helpers.cpp:169: undefined reference to `DJI::OSDK::LinuxSerialDevice : error : setSerialPureTimedRead()'
+C:\Users\15104\Documents\Visual Studio 2017\Projects\Project2\Project2\dji_linux_helpers.cpp:171: undefined reference to `DJI::OSDK::Log : error : getErrorLogState()'
+C:\Users\15104\Documents\Visual Studio 2017\Projects\Project2\Project2\dji_linux_helpers.cpp:171: undefined reference to `DJI::OSDK::Log : error : title(int, char const*, char const*, int)'
+C:\Users\15104\Documents\Visual Studio 2017\Projects\Project2\Project2\dji_linux_helpers.cpp:175: undefined reference to `DJI::OSDK::LinuxSerialDevice : error : serialRead(unsigned char*, int)'
+C:\Users\15104\Documents\Visual Studio 2017\Projects\Project2\Project2\dji_linux_helpers.cpp:177: undefined reference to `DJI::OSDK::Log : error : getErrorLogState()'
+C:\Users\15104\Documents\Visual Studio 2017\Projects\Project2\Project2\dji_linux_helpers.cpp:177: undefined reference to `DJI::OSDK::Log : error : title(int, char const*, char const*, int)'
+C:\Users\15104\Documents\Visual Studio 2017\Projects\Project2\Project2\dji_linux_helpers.cpp:181: undefined reference to `DJI::OSDK::Log : error : getErrorLogState()'
+C:\Users\15104\Documents\Visual Studio 2017\Projects\Project2\Project2\dji_linux_helpers.cpp:181: undefined reference to `DJI::OSDK::Log : error : title(int, char const*, char const*, int)'
+C:\Users\15104\Documents\Visual Studio 2017\Projects\Project2\Project2\dji_linux_helpers.cpp:191: undefined reference to `DJI::OSDK::Log : error : getErrorLogState()'
+C:\Users\15104\Documents\Visual Studio 2017\Projects\Project2\Project2\dji_linux_helpers.cpp:191: undefined reference to `DJI::OSDK::Log : error : title(int, char const*, char const*, int)'
+C:\Users\15104\Documents\Visual Studio 2017\Projects\Project2\Project2\dji_linux_helpers.cpp:196: undefined reference to `DJI::OSDK::Log : error : getErrorLogState()'
+C:\Users\15104\Documents\Visual Studio 2017\Projects\Project2\Project2\dji_linux_helpers.cpp:196: undefined reference to `DJI::OSDK::Log : error : title(int, char const*, char const*, int)'
+C:\Users\15104\Documents\Visual Studio 2017\Projects\Project2\Project2\dji_linux_helpers.cpp:201: undefined reference to `DJI::OSDK::LinuxSerialDevice : error : unsetSerialPureTimedRead()'
+C:\Users\15104\Documents\Visual Studio 2017\Projects\Project2\Project2\obj\ARM\Debug\dji_linux_helpers.o : error : 
+/usr/local/include/djiosdk/dji_version.hpp:84: undefined reference to `DJI::OSDK::Version : error : FW(unsigned char, unsigned char, unsigned char, unsigned char)'
+/usr/local/include/djiosdk/dji_version.hpp:93: undefined reference to `DJI::OSDK::Version : error : FW(unsigned char, unsigned char, unsigned char, unsigned char)'
+C:\Users\15104\Documents\Visual Studio 2017\Projects\Project2\Project2\obj\ARM\Debug\dji_linux_helpers.o : error : 
+/usr/local/include/djiosdk/dji_singleton.hpp:80: undefined reference to `DJI::OSDK::Log::Log(DJI::OSDK : error : Mutex*)'
+C:\Users\15104\Documents\Visual Studio 2017\Projects\Project2\Project2\obj\ARM\Debug\dji_linux_helpers.o: In function `DJI::OSDK::LinuxSerialDevice: : error : 
+/usr/local/include/djiosdk/linux_serial_device.hpp:74: undefined reference to `DJI::OSDK::LinuxSerialDevice : error : _checkBaudRate(unsigned char (&) [2048])'
+C:\Users\15104\Documents\Visual Studio 2017\Projects\Project2\Project2\obj\ARM\Debug\main.o : error : 
+C:\Users\15104\Documents\Visual Studio 2017\Projects\Project2\Project2\main.cpp:29: undefined reference to `DJI::OSDK::Vehicle : error : obtainCtrlAuthority(int)'
+C:\Users\15104\Documents\Visual Studio 2017\Projects\Project2\Project2\obj\ARM\Debug\main.o : error : 
+/usr/local/include/djiosdk/dji_version.hpp:84: undefined reference to `DJI::OSDK::Version : error : FW(unsigned char, unsigned char, unsigned char, unsigned char)'
+/usr/local/include/djiosdk/dji_version.hpp:93: undefined reference to `DJI::OSDK::Version : error : FW(unsigned char, unsigned char, unsigned char, unsigned char)'
+collect2 : error : ld returned 1 exit status

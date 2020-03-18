@@ -1,0 +1,9 @@
+﻿  Validating architecture
+  Validating sources
+  Copying sources remotely to '192.168.137.204'
+  Starting remote build
+  Compiling sources:
+  main.cpp
+  Linking objects
+  ultrasonic.vcxproj -> C:\Users\15104\Documents\Visual Studio 2017\Projects\ultrasonic\ultrasonic\bin\ARM\Debug\ultrasonic.out
+  Invoking gpio export 17 out

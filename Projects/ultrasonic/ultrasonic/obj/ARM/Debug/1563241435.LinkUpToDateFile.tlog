@@ -1,0 +1,1 @@
+g++ -o "/home/pi/projects/ultrasonic/bin/ARM/Debug/ultrasonic.out" -Wl,--no-undefined -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack /home/pi/projects/ultrasonic/obj/ARM/Debug/libSonar.o /home/pi/projects/ultrasonic/obj/ARM/Debug/main.o -lwiringPi

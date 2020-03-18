@@ -1,0 +1,498 @@
+login as: pi
+pi@192.168.137.65's password:
+Linux raspberrypi 4.14.34-v7+ #1110 SMP Mon Apr 16 15:18:51 BST 2018 armv7l
+
+The programs included with the Debian GNU/Linux system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+permitted by applicable law.
+Last login: Fri Jun 15 20:36:48 2018
+
+SSH is enabled and the default password for the 'pi' user has not been changed.
+This is a security risk - please login as the 'pi' user and type 'passwd' to set a new password.
+
+pi@raspberrypi:~ $ ls
+Desktop    Downloads  Pictures  python_games  Videos
+Documents  Music      Public    Templates
+
+
+pi@raspberrypi:~ $ sudo apt-get update
+
+Get:1 http://archive.raspberrypi.org/debian stretch InRelease [25.3 kB]
+Get:2 http://raspbian.raspberrypi.org/raspbian stretch InRelease [15.0 kB]
+Get:3 http://archive.raspberrypi.org/debian stretch/main armhf Packages [159 kB]
+Get:4 http://raspbian.raspberrypi.org/raspbian stretch/main armhf Packages [11.7 MB]
+Get:5 http://archive.raspberrypi.org/debian stretch/ui armhf Packages [32.9 kB]
+Fetched 11.9 MB in 17s (667 kB/s)
+Reading package lists... Done
+
+pi@raspberrypi:~ $ git clone https://github.com/dji-sdk/Onboard-SDK
+
+
+Cloning into 'Onboard-SDK'...
+remote: Counting objects: 8353, done.
+remote: Total 8353 (delta 0), reused 0 (delta 0), pack-reused 8352
+Receiving objects: 100% (8353/8353), 79.92 MiB | 4.60 MiB/s, done.
+Resolving deltas: 100% (4443/4443), done.
+
+pi@raspberrypi:~ $ cd Onboard-SDK/
+
+pi@raspberrypi:~/Onboard-SDK $ ls
+
+CMakeLists.txt  Doxyfile  License.txt  README.md  utility
+contrib         EULA.txt  osdk-core    sample
+
+
+pi@raspberrypi:~/Onboard-SDK $ mkdir build
+pi@raspberrypi:~/Onboard-SDK $ ls
+
+build           contrib   EULA.txt     osdk-core  sample
+CMakeLists.txt  Doxyfile  License.txt  README.md  utility
+
+pi@raspberrypi:~/Onboard-SDK $ cd build
+pi@raspberrypi:~/Onboard-SDK/build $ cmake ..
+-bash: cmake: command not found
+pi@raspberrypi:~/Onboard-SDK/build $ sudo apt-get install cmake
+
+
+
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+The following additional packages will be installed:
+  cmake-data libjsoncpp1
+Suggested packages:
+  codeblocks eclipse ninja-build
+The following NEW packages will be installed:
+  cmake cmake-data libjsoncpp1
+0 upgraded, 3 newly installed, 0 to remove and 52 not upgraded.
+Need to get 3,685 kB of archives.
+After this operation, 19.0 MB of additional disk space will be used.
+Do you want to continue? [Y/n] y
+Get:1 http://raspbian.mirror.colo-serv.net/raspbian stretch/main armhf cmake-data all 3.7.2-1 [1,216 kB]
+Get:2 http://raspbian.mirror.colo-serv.net/raspbian stretch/main armhf libjsoncpp1 armhf 1.7.4-3 [66.2 kB]
+Get:3 http://raspbian.mirror.colo-serv.net/raspbian stretch/main armhf cmake armhf 3.7.2-1 [2,402 kB]
+Fetched 3,685 kB in 1s (2,614 kB/s)
+Selecting previously unselected package cmake-data.
+(Reading database ... 124722 files and directories currently installed.)
+Preparing to unpack .../cmake-data_3.7.2-1_all.deb ...
+Unpacking cmake-data (3.7.2-1) ...
+Selecting previously unselected package libjsoncpp1:armhf.
+Preparing to unpack .../libjsoncpp1_1.7.4-3_armhf.deb ...
+Unpacking libjsoncpp1:armhf (1.7.4-3) ...
+Selecting previously unselected package cmake.
+Preparing to unpack .../cmake_3.7.2-1_armhf.deb ...
+Unpacking cmake (3.7.2-1) ...
+Setting up cmake-data (3.7.2-1) ...
+Processing triggers for libc-bin (2.24-11+deb9u3) ...
+Processing triggers for man-db (2.7.6.1-2) ...
+Setting up libjsoncpp1:armhf (1.7.4-3) ...
+Setting up cmake (3.7.2-1) ...
+Processing triggers for libc-bin (2.24-11+deb9u3) ...
+
+
+pi@raspberrypi:~/Onboard-SDK/build $ cmake ..   \\ space here!
+
+
+
+-- The C compiler identification is GNU 6.3.0
+-- The CXX compiler identification is GNU 6.3.0
+-- Check for working C compiler: /usr/bin/cc
+-- Check for working C compiler: /usr/bin/cc -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /usr/bin/c++
+-- Check for working CXX compiler: /usr/bin/c++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/pi/Onboard-SDK/build
+
+
+pi@raspberrypi:~/Onboard-SDK/build $ make
+
+
+Scanning dependencies of target djiosdk-core
+[  1%] Building CXX object osdk-core/CMakeFiles/djiosdk-core.dir/api/src/dji_ack.cpp.o
+[  2%] Building CXX object osdk-core/CMakeFiles/djiosdk-core.dir/api/src/dji_broadcast.cpp.o
+[  4%] Building CXX object osdk-core/CMakeFiles/djiosdk-core.dir/api/src/dji_camera.cpp.o
+[  5%] Building CXX object osdk-core/CMakeFiles/djiosdk-core.dir/api/src/dji_command.cpp.o
+[  7%] Building CXX object osdk-core/CMakeFiles/djiosdk-core.dir/api/src/dji_control.cpp.o
+[  8%] Building CXX object osdk-core/CMakeFiles/djiosdk-core.dir/api/src/dji_error.cpp.o
+[ 10%] Building CXX object osdk-core/CMakeFiles/djiosdk-core.dir/api/src/dji_gimbal.cpp.o
+[ 11%] Building CXX object osdk-core/CMakeFiles/djiosdk-core.dir/api/src/dji_hardware_sync.cpp.o
+[ 12%] Building CXX object osdk-core/CMakeFiles/djiosdk-core.dir/api/src/dji_hotpoint.cpp.o
+[ 14%] Building CXX object osdk-core/CMakeFiles/djiosdk-core.dir/api/src/dji_mfio.cpp.o
+[ 15%] Building CXX object osdk-core/CMakeFiles/djiosdk-core.dir/api/src/dji_mission_manager.cpp.o
+[ 17%] Building CXX object osdk-core/CMakeFiles/djiosdk-core.dir/api/src/dji_mobile_communication.cpp.o
+[ 18%] Building CXX object osdk-core/CMakeFiles/djiosdk-core.dir/api/src/dji_subscription.cpp.o
+[ 20%] Building CXX object osdk-core/CMakeFiles/djiosdk-core.dir/api/src/dji_vehicle.cpp.o
+[ 21%] Building CXX object osdk-core/CMakeFiles/djiosdk-core.dir/api/src/dji_version.cpp.o
+[ 22%] Building CXX object osdk-core/CMakeFiles/djiosdk-core.dir/api/src/dji_virtual_rc.cpp.o
+[ 24%] Building CXX object osdk-core/CMakeFiles/djiosdk-core.dir/api/src/dji_waypoint.cpp.o
+[ 25%] Building CXX object osdk-core/CMakeFiles/djiosdk-core.dir/protocol/src/dji_aes.cpp.o
+[ 27%] Building CXX object osdk-core/CMakeFiles/djiosdk-core.dir/protocol/src/dji_open_protocol.cpp.o
+[ 28%] Building CXX object osdk-core/CMakeFiles/djiosdk-core.dir/protocol/src/dji_protocol_base.cpp.o
+[ 30%] Building CXX object osdk-core/CMakeFiles/djiosdk-core.dir/hal/src/dji_hard_driver.cpp.o
+[ 31%] Building CXX object osdk-core/CMakeFiles/djiosdk-core.dir/hal/src/dji_log.cpp.o
+[ 32%] Building CXX object osdk-core/CMakeFiles/djiosdk-core.dir/hal/src/dji_memory.cpp.o
+[ 34%] Building CXX object osdk-core/CMakeFiles/djiosdk-core.dir/hal/src/dji_platform_manager.cpp.o
+[ 35%] Building CXX object osdk-core/CMakeFiles/djiosdk-core.dir/hal/src/dji_thread_manager.cpp.o
+[ 37%] Building CXX object osdk-core/CMakeFiles/djiosdk-core.dir/utility/src/dji_circular_buffer.cpp.o
+[ 38%] Building CXX object osdk-core/CMakeFiles/djiosdk-core.dir/utility/src/dji_singleton.cpp.o
+[ 40%] Building CXX object osdk-core/CMakeFiles/djiosdk-core.dir/platform/default/src/dji_memory_default.cpp.o
+[ 41%] Building CXX object osdk-core/CMakeFiles/djiosdk-core.dir/platform/linux/src/linux_serial_device.cpp.o
+[ 42%] Building CXX object osdk-core/CMakeFiles/djiosdk-core.dir/platform/linux/src/posix_thread.cpp.o
+[ 44%] Building CXX object osdk-core/CMakeFiles/djiosdk-core.dir/platform/linux/src/posix_thread_manager.cpp.o
+[ 45%] Linking CXX static library ../libs/libdjiosdk-core.a
+[ 45%] Built target djiosdk-core
+Scanning dependencies of target djiosdk-cameragimbal-sample
+[ 47%] Building CXX object sample/linux/camera-gimbal/CMakeFiles/djiosdk-cameragimbal-sample.dir/camera_gimbal_sample.cpp.o
+[ 48%] Building CXX object sample/linux/camera-gimbal/CMakeFiles/djiosdk-cameragimbal-sample.dir/main.cpp.o
+[ 50%] Building CXX object sample/linux/camera-gimbal/CMakeFiles/djiosdk-cameragimbal-sample.dir/__/common/dji_linux_environment.cpp.o
+[ 51%] Building CXX object sample/linux/camera-gimbal/CMakeFiles/djiosdk-cameragimbal-sample.dir/__/common/dji_linux_helpers.cpp.o
+[ 52%] Linking CXX executable ../../../bin/djiosdk-cameragimbal-sample
+[ 52%] Built target djiosdk-cameragimbal-sample
+Scanning dependencies of target djiosdk-flightcontrol-sample
+[ 54%] Building CXX object sample/linux/flight-control/CMakeFiles/djiosdk-flightcontrol-sample.dir/flight_control_sample.cpp.o
+[ 55%] Building CXX object sample/linux/flight-control/CMakeFiles/djiosdk-flightcontrol-sample.dir/main.cpp.o
+[ 57%] Building CXX object sample/linux/flight-control/CMakeFiles/djiosdk-flightcontrol-sample.dir/__/common/dji_linux_environment.cpp.o
+[ 58%] Building CXX object sample/linux/flight-control/CMakeFiles/djiosdk-flightcontrol-sample.dir/__/common/dji_linux_helpers.cpp.o
+[ 60%] Linking CXX executable ../../../bin/djiosdk-flightcontrol-sample
+[ 60%] Built target djiosdk-flightcontrol-sample
+Scanning dependencies of target djiosdk-mfio-sample
+[ 61%] Building CXX object sample/linux/mfio/CMakeFiles/djiosdk-mfio-sample.dir/main.cpp.o
+[ 62%] Building CXX object sample/linux/mfio/CMakeFiles/djiosdk-mfio-sample.dir/mfio_sample.cpp.o
+[ 64%] Building CXX object sample/linux/mfio/CMakeFiles/djiosdk-mfio-sample.dir/__/common/dji_linux_environment.cpp.o
+[ 65%] Building CXX object sample/linux/mfio/CMakeFiles/djiosdk-mfio-sample.dir/__/common/dji_linux_helpers.cpp.o
+[ 67%] Linking CXX executable ../../../bin/djiosdk-mfio-sample
+[ 67%] Built target djiosdk-mfio-sample
+Scanning dependencies of target djiosdk-mission-sample
+[ 68%] Building CXX object sample/linux/missions/CMakeFiles/djiosdk-mission-sample.dir/main.cpp.o
+[ 70%] Building CXX object sample/linux/missions/CMakeFiles/djiosdk-mission-sample.dir/mission_sample.cpp.o
+[ 71%] Building CXX object sample/linux/missions/CMakeFiles/djiosdk-mission-sample.dir/__/common/dji_linux_environment.cpp.o
+[ 72%] Building CXX object sample/linux/missions/CMakeFiles/djiosdk-mission-sample.dir/__/common/dji_linux_helpers.cpp.o
+[ 74%] Linking CXX executable ../../../bin/djiosdk-mission-sample
+[ 74%] Built target djiosdk-mission-sample
+Scanning dependencies of target djiosdk-mobile-sample
+[ 75%] Building CXX object sample/linux/mobile/CMakeFiles/djiosdk-mobile-sample.dir/main.cpp.o
+[ 77%] Building CXX object sample/linux/mobile/CMakeFiles/djiosdk-mobile-sample.dir/mobile_sample.cpp.o
+[ 78%] Building CXX object sample/linux/mobile/CMakeFiles/djiosdk-mobile-sample.dir/__/common/dji_linux_environment.cpp.o
+[ 80%] Building CXX object sample/linux/mobile/CMakeFiles/djiosdk-mobile-sample.dir/__/common/dji_linux_helpers.cpp.o
+[ 81%] Building CXX object sample/linux/mobile/CMakeFiles/djiosdk-mobile-sample.dir/__/flight-control/flight_control_sample.cpp.o
+[ 82%] Building CXX object sample/linux/mobile/CMakeFiles/djiosdk-mobile-sample.dir/__/camera-gimbal/camera_gimbal_sample.cpp.o
+[ 84%] Building CXX object sample/linux/mobile/CMakeFiles/djiosdk-mobile-sample.dir/__/missions/mission_sample.cpp.o
+[ 85%] Linking CXX executable ../../../bin/djiosdk-mobile-sample
+[ 85%] Built target djiosdk-mobile-sample
+Scanning dependencies of target djiosdk-telemetry-sample
+[ 87%] Building CXX object sample/linux/telemetry/CMakeFiles/djiosdk-telemetry-sample.dir/main.cpp.o
+[ 88%] Building CXX object sample/linux/telemetry/CMakeFiles/djiosdk-telemetry-sample.dir/telemetry_sample.cpp.o
+[ 90%] Building CXX object sample/linux/telemetry/CMakeFiles/djiosdk-telemetry-sample.dir/__/common/dji_linux_environment.cpp.o
+[ 91%] Building CXX object sample/linux/telemetry/CMakeFiles/djiosdk-telemetry-sample.dir/__/common/dji_linux_helpers.cpp.o
+[ 92%] Linking CXX executable ../../../bin/djiosdk-telemetry-sample
+[ 92%] Built target djiosdk-telemetry-sample
+Scanning dependencies of target djiosdk-logging-sample
+[ 94%] Building CXX object sample/linux/logging/CMakeFiles/djiosdk-logging-sample.dir/logging_sample.cpp.o
+[ 95%] Building CXX object sample/linux/logging/CMakeFiles/djiosdk-logging-sample.dir/main.cpp.o
+[ 97%] Building CXX object sample/linux/logging/CMakeFiles/djiosdk-logging-sample.dir/__/common/dji_linux_environment.cpp.o
+[ 98%] Building CXX object sample/linux/logging/CMakeFiles/djiosdk-logging-sample.dir/__/common/dji_linux_helpers.cpp.o
+[100%] Linking CXX executable ../../../bin/djiosdk-logging-sample
+[100%] Built target djiosdk-logging-sample
+
+pi@raspberrypi:~/Onboard-SDK/build $ make install
+[ 45%] Built target djiosdk-core
+[ 52%] Built target djiosdk-cameragimbal-sample
+[ 60%] Built target djiosdk-flightcontrol-sample
+[ 67%] Built target djiosdk-mfio-sample
+[ 74%] Built target djiosdk-mission-sample
+[ 85%] Built target djiosdk-mobile-sample
+[ 92%] Built target djiosdk-telemetry-sample
+[100%] Built target djiosdk-logging-sample
+Install the project...
+-- Install configuration: "Debug"
+CMake Error at osdk-core/cmake_install.cmake:44 (file):
+  file cannot create directory: /usr/local/lib/cmake/djiosdk.  Maybe need
+  administrative privileges.
+Call Stack (most recent call first):
+  cmake_install.cmake:37 (include)
+
+
+Makefile:115: recipe for target 'install' failed
+make: *** [install] Error 1
+
+pi@raspberrypi:~/Onboard-SDK/build $ sudo make install
+
+[ 45%] Built target djiosdk-core
+[ 52%] Built target djiosdk-cameragimbal-sample
+[ 60%] Built target djiosdk-flightcontrol-sample
+[ 67%] Built target djiosdk-mfio-sample
+[ 74%] Built target djiosdk-mission-sample
+[ 85%] Built target djiosdk-mobile-sample
+[ 92%] Built target djiosdk-telemetry-sample
+[100%] Built target djiosdk-logging-sample
+Install the project...
+-- Install configuration: "Debug"
+-- Installing: /usr/local/lib/cmake/djiosdk/DJIOSDKConfig.cmake
+-- Installing: /usr/local/lib/cmake/djiosdk/DJIOSDKConfigVersion.cmake
+-- Installing: /usr/local/lib/libdjiosdk-core.a
+-- Installing: /usr/local/include/djiosdk/dji_ack.hpp
+-- Installing: /usr/local/include/djiosdk/dji_broadcast.hpp
+-- Installing: /usr/local/include/djiosdk/dji_camera.hpp
+-- Installing: /usr/local/include/djiosdk/dji_command.hpp
+-- Installing: /usr/local/include/djiosdk/dji_control.hpp
+-- Installing: /usr/local/include/djiosdk/dji_error.hpp
+-- Installing: /usr/local/include/djiosdk/dji_gimbal.hpp
+-- Installing: /usr/local/include/djiosdk/dji_hardware_sync.hpp
+-- Installing: /usr/local/include/djiosdk/dji_hotpoint.hpp
+-- Installing: /usr/local/include/djiosdk/dji_mfio.hpp
+-- Installing: /usr/local/include/djiosdk/dji_mission_base.hpp
+-- Installing: /usr/local/include/djiosdk/dji_mission_manager.hpp
+-- Installing: /usr/local/include/djiosdk/dji_mission_type.hpp
+-- Installing: /usr/local/include/djiosdk/dji_mobile_communication.hpp
+-- Installing: /usr/local/include/djiosdk/dji_status.hpp
+-- Installing: /usr/local/include/djiosdk/dji_subscription.hpp
+-- Installing: /usr/local/include/djiosdk/dji_telemetry.hpp
+-- Installing: /usr/local/include/djiosdk/dji_type.hpp
+-- Installing: /usr/local/include/djiosdk/dji_vehicle.hpp
+-- Installing: /usr/local/include/djiosdk/dji_vehicle_callback.hpp
+-- Installing: /usr/local/include/djiosdk/dji_version.hpp
+-- Installing: /usr/local/include/djiosdk/dji_virtual_rc.hpp
+-- Installing: /usr/local/include/djiosdk/dji_waypoint.hpp
+-- Installing: /usr/local/include/djiosdk/dji_aes.hpp
+-- Installing: /usr/local/include/djiosdk/dji_crc.hpp
+-- Installing: /usr/local/include/djiosdk/dji_open_protocol.hpp
+-- Installing: /usr/local/include/djiosdk/dji_protocol_base.hpp
+-- Installing: /usr/local/include/djiosdk/dji_hard_driver.hpp
+-- Installing: /usr/local/include/djiosdk/dji_log.hpp
+-- Installing: /usr/local/include/djiosdk/dji_memory.hpp
+-- Installing: /usr/local/include/djiosdk/dji_platform_manager.hpp
+-- Installing: /usr/local/include/djiosdk/dji_thread_manager.hpp
+-- Installing: /usr/local/include/djiosdk/dji_circular_buffer.hpp
+-- Installing: /usr/local/include/djiosdk/dji_singleton.hpp
+-- Installing: /usr/local/include/djiosdk/linux_serial_device.hpp
+-- Installing: /usr/local/include/djiosdk/posix_thread.hpp
+-- Installing: /usr/local/include/djiosdk/posix_thread_manager.hpp
+-- Installing: /usr/local/lib/cmake/djiosdk/djiosdkTargets.cmake
+-- Installing: /usr/local/lib/cmake/djiosdk/djiosdkTargets-debug.cmake
+pi@raspberrypi:~/Onboard-SDK/build $ ls
+bin             CMakeFiles           install_manifest.txt  Makefile   sample
+CMakeCache.txt  cmake_install.cmake  libs                  osdk-core
+pi@raspberrypi:~/Onboard-SDK/build $ cd ..
+pi@raspberrypi:~/Onboard-SDK $ ls
+build           contrib   EULA.txt     osdk-core  sample
+CMakeLists.txt  Doxyfile  License.txt  README.md  utility
+pi@raspberrypi:~/Onboard-SDK $ cd ~/dji
+pi@raspberrypi:~/dji $ ls
+main.cpp
+pi@raspberrypi:~/dji $ cat main.cpp
+#include <djiosdk/dji_vehicle.hpp>
+#include <iostream>
+
+using namespace std;
+using namespace DJI::OSDK;
+
+int main() {
+
+    Vehicle v(true);
+
+    ACK::DroneVersion version = v.getDroneVersion(1000);
+
+    cout << version.data.hwVersion << endl;
+    return 0;
+}pi@raspberrypi:~/dji $ g++ main.cpp
+/tmp/ccbTcyfG.o: In function `main':
+main.cpp:(.text+0x24): undefined reference to `DJI::OSDK::Vehicle::Vehicle(bool)'
+main.cpp:(.text+0x48): undefined reference to `DJI::OSDK::Vehicle::getDroneVersion(int)'
+main.cpp:(.text+0x8c): undefined reference to `DJI::OSDK::Vehicle::~Vehicle()'
+main.cpp:(.text+0xa8): undefined reference to `DJI::OSDK::Vehicle::~Vehicle()'
+/tmp/ccbTcyfG.o: In function `__static_initialization_and_destruction_0(int, int)':
+main.cpp:(.text+0x104): undefined reference to `DJI::OSDK::Version::FW(unsigned char, unsigned char, unsigned char, unsigned char)'
+main.cpp:(.text+0x124): undefined reference to `DJI::OSDK::Version::FW(unsigned char, unsigned char, unsigned char, unsigned char)'
+collect2: error: ld returned 1 exit status
+pi@raspberrypi:~/dji $ g++ main.cpp -ldjiosdk-core
+//usr/local/lib/libdjiosdk-core.a(posix_thread.cpp.o): In function `DJI::OSDK::PosixThread::createThread()':
+/home/pi/Onboard-SDK/osdk-core/platform/linux/src/posix_thread.cpp:61: undefined reference to `pthread_create'
+/home/pi/Onboard-SDK/osdk-core/platform/linux/src/posix_thread.cpp:67: undefined reference to `pthread_create'
+/home/pi/Onboard-SDK/osdk-core/platform/linux/src/posix_thread.cpp:72: undefined reference to `pthread_create'
+/home/pi/Onboard-SDK/osdk-core/platform/linux/src/posix_thread.cpp:77: undefined reference to `pthread_create'
+/home/pi/Onboard-SDK/osdk-core/platform/linux/src/posix_thread.cpp:91: undefined reference to `pthread_setname_np'
+//usr/local/lib/libdjiosdk-core.a(posix_thread.cpp.o): In function `DJI::OSDK::PosixThread::stopThread()':
+/home/pi/Onboard-SDK/osdk-core/platform/linux/src/posix_thread.cpp:117: undefined reference to `pthread_join'
+collect2: error: ld returned 1 exit status
+pi@raspberrypi:~/dji $ g++ main.cpp -ldjiosdk-core -lpthread
+pi@raspberrypi:~/dji $ ls
+a.out  main.cpp
+pi@raspberrypi:~/dji $ ./a.out
+
+STATUS/1 @ init, L55: Attempting to open device ¦~p¦¦vP¦¦v with baudrate 249660...
+
+ERRORLOG/1 @ _serialOpen, L175: cannot open device ¦~p¦¦vP¦¦v
+
+ERRORLOG/1 @ init, L60: ...Failed to start serial
+
+ERRORLOG/1 @ sendData, L407: Port closed.
+ERRORLOG/1 @ sendData, L411: Open Protocol cmd send failed, send_len: -1 packet_len: 19
+^C
+pi@raspberrypi:~/dji $
+pi@raspberrypi:~/dji $ sudo raspi-config
+
+
+login as: pi
+pi@192.168.137.65's password:
+Linux raspberrypi 4.14.34-v7+ #1110 SMP Mon Apr 16 15:18:51 BST 2018 armv7l
+
+The programs included with the Debian GNU/Linux system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+permitted by applicable law.
+Last login: Fri Jun 15 21:12:10 2018
+
+SSH is enabled and the default password for the 'pi' user has not been changed.
+This is a security risk - please login as the 'pi' user and type 'passwd' to set a new password.
+
+pi@raspberrypi:~ $ cd /dev
+pi@raspberrypi:/dev $ ls
+autofs           loop7               ram6     tty21  tty47      vcio
+block            loop-control        ram7     tty22  tty48      vc-mem
+btrfs-control    mapper              ram8     tty23  tty49      vcs
+bus              mem                 ram9     tty24  tty5       vcs1
+cachefiles       memory_bandwidth    random   tty25  tty50      vcs2
+char             mmcblk0             raw      tty26  tty51      vcs3
+console          mmcblk0p1           rfkill   tty27  tty52      vcs4
+cpu_dma_latency  mmcblk0p2           serial0  tty28  tty53      vcs5
+cuse             mqueue              shm      tty29  tty54      vcs6
+disk             net                 snd      tty3   tty55      vcs7
+fb0              network_latency     stderr   tty30  tty56      vcsa
+fd               network_throughput  stdin    tty31  tty57      vcsa1
+full             null                stdout   tty32  tty58      vcsa2
+fuse             ppp                 tty      tty33  tty59      vcsa3
+gpiochip0        ptmx                tty0     tty34  tty6       vcsa4
+gpiomem          pts                 tty1     tty35  tty60      vcsa5
+hwrng            ram0                tty10    tty36  tty61      vcsa6
+initctl          ram1                tty11    tty37  tty62      vcsa7
+input            ram10               tty12    tty38  tty63      vcsm
+kmsg             ram11               tty13    tty39  tty7       vhci
+log              ram12               tty14    tty4   tty8       watchdog
+loop0            ram13               tty15    tty40  tty9       watchdog0
+loop1            ram14               tty16    tty41  ttyAMA0    zero
+loop2            ram15               tty17    tty42  ttyprintk
+loop3            ram2                tty18    tty43  uhid
+loop4            ram3                tty19    tty44  uinput
+loop5            ram4                tty2     tty45  urandom
+loop6            ram5                tty20    tty46  vchiq
+pi@raspberrypi:/dev $ cd ~/dji/
+pi@raspberrypi:~/dji $ g++ main.cpp -ldjiosdk-core -lpthread
+pi@raspberrypi:~/dji $ ls
+a.out  main.cpp
+pi@raspberrypi:~/dji $ ./a.out
+
+STATUS/1 @ init, L55: Attempting to open device /dev/ttyAMA0 with baudrate 115200...
+
+STATUS/1 @ init, L65: ...Serial started successfully.
+
+
+^C
+pi@raspberrypi:~/dji $ cat main.cpp
+#include <djiosdk/dji_vehicle.hpp>
+#include <iostream>
+
+using namespace std;
+using namespace DJI::OSDK;
+
+int main() {
+
+    Vehicle v("/dev/ttyAMA0", 115200, true, false);
+
+    ACK::DroneVersion version = v.getDroneVersion(1);
+
+    cout << version.data.hwVersion << endl;
+    return 0;
+}pi@raspberrypi:~/dji $ g++ main.cpp -ldjiosdk-core -lpthread
+pi@raspberrypi:~/dji $ g++ main.cpp -ldjiosdk-core -lpthread && ./a.out
+
+STATUS/1 @ init, L55: Attempting to open device /dev/ttyAMA0 with baudrate 115200...
+
+STATUS/1 @ init, L65: ...Serial started successfully.
+
+ERRORLOG/1 @ getDroneVersion, L1339: Drone version not obtained! Please do not proceed.
+Possible reasons:
+        Serial port connection:
+                * SDK is not enabled, please check DJI Assistant2 -> SDK -> [v] Enable API Control.
+                * Baudrate is not correct, please double-check from DJI Assistant2 -> SDK -> baudrate.
+                * TX and RX pins are inverted.
+                * Serial port is occupied by another program.
+                * Permission required. Please do 'sudo usermod -a -G dialout $USER' (you do not need to replace $USER with your username). Then logout and login again
+¦
+pi@raspberrypi:~/dji $ g++ main.cpp -ldjiosdk-core -lpthread && ./a.out
+
+STATUS/1 @ init, L55: Attempting to open device /dev/ttyAMA0 with baudrate 115200...
+
+STATUS/1 @ init, L65: ...Serial started successfully.
+
+ERRORLOG/1 @ getDroneVersion, L1339: Drone version not obtained! Please do not proceed.
+Possible reasons:
+        Serial port connection:
+                * SDK is not enabled, please check DJI Assistant2 -> SDK -> [v] Enable API Control.
+                * Baudrate is not correct, please double-check from DJI Assistant2 -> SDK -> baudrate.
+                * TX and RX pins are inverted.
+                * Serial port is occupied by another program.
+                * Permission required. Please do 'sudo usermod -a -G dialout $USER' (you do not need to replace $USER with your username). Then logout and login again
+¦
+pi@raspberrypi:~/dji $ g++ main.cpp -ldjiosdk-core -lpthread && ./a.out
+
+STATUS/1 @ init, L55: Attempting to open device /dev/ttyAMA0 with baudrate 230400...
+
+STATUS/1 @ init, L65: ...Serial started successfully.
+
+STATUS/1 @ parseDroneVersionInfo, L687: Device Serial No. = 041DE52321
+
+STATUS/1 @ parseDroneVersionInfo, L689: Hardware = M100
+
+STATUS/1 @ parseDroneVersionInfo, L690: Firmware = 3.1.10.0
+
+STATUS/1 @ parseDroneVersionInfo, L693: Version CRC = 0xA6453AAC
+M100
+pi@raspberrypi:~/dji $ A
+
+
+
+pi@raspberrypi:~ $ cd Onboard-SDK
+pi@raspberrypi:~/Onboard-SDK $ cd build
+pi@raspberrypi:~/Onboard-SDK/build $ cd bin
+pi@raspberrypi:~/Onboard-SDK/build/bin $ ./djiosdk-flightcontrol-sample ../../sample/linux/common/UserConfig.txt
+
+
+
+@reboot cd /home/pi/projects/Blink2/bin/ARM/Debug && ./Blink2.out
+
+
+
+
+#!/bin/bash
+
+echo 17 > /sys/class/gpio/export && sleep 0.1 && echo out > /sys/class/gpio/gpio17/direction
+
+/home/pi/projects/Blink2/bin/ARM/Debug/Blink2.out
+/usr/bin/logger Blinking
+echo 17 > /sys/class/gpio/unexport
+
+
+/home/pi/Onboard-SDK/build/bin/djiosdk-flightcontrol-sample ../../sample/linux/UserConfig.txt
+
+
+
+bash /home/pi/testboot.sh
+
+
+#!/bin/bash
+
+/home/pi/Onboard-SDK/build/bin/djiosdk-flightcontrol-sample /home/pi/Onboard-SDK//sample/linux/common/UserConfig.txt

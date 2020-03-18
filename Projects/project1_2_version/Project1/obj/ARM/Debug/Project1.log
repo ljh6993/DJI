@@ -1,0 +1,38 @@
+﻿  Validating architecture
+  Validating sources
+  Copying sources remotely to '192.168.137.218'
+  Starting remote build
+  Compiling sources:
+  control_l.cpp
+/usr/local/include/djiosdk/posix_thread.hpp(6,54): warning : "/*" within comment [-Wcomment]
+/usr/local/include/djiosdk/linux_serial_device.hpp(75,3): warning : no return statement in function returning non-void [-Wreturn-type]
+C:\Users\15104\Desktop\visualproject\Project1\Project1\control_l.h(44,31): warning : conversion to ‘float’ alters ‘double’ constant value [-Wfloat-conversion]
+C:\Users\15104\Desktop\visualproject\Project1\Project1\control_l.cpp(62,15): warning : unused variable ‘data’ [-Wunused-variable]
+C:\Users\15104\Desktop\visualproject\Project1\Project1\control_l.cpp(101,11): warning : unused variable ‘m’ [-Wunused-variable]
+C:\Users\15104\Desktop\visualproject\Project1\Project1\control_l.cpp(188,7): warning : unused variable ‘pkgIndex’ [-Wunused-variable]
+C:\Users\15104\Desktop\visualproject\Project1\Project1\control_l.cpp(301,28): warning : suggest parentheses around assignment used as truth value [-Wparentheses]
+C:\Users\15104\Desktop\visualproject\Project1\Project1\control_l.cpp(374,20): warning : conversion to ‘float’ alters ‘double’ constant value [-Wfloat-conversion]
+C:\Users\15104\Desktop\visualproject\Project1\Project1\control_l.cpp(381,20): warning : conversion to ‘float’ alters ‘double’ constant value [-Wfloat-conversion]
+C:\Users\15104\Desktop\visualproject\Project1\Project1\control_l.cpp(386,28): warning : conversion to ‘float’ from ‘int’ may alter its value [-Wconversion]
+C:\Users\15104\Desktop\visualproject\Project1\Project1\control_l.cpp(386,60): warning : conversion to ‘float’ from ‘int’ may alter its value [-Wconversion]
+C:\Users\15104\Desktop\visualproject\Project1\Project1\control_l.cpp(389,24): warning : conversion to ‘float’ from ‘int’ may alter its value [-Wconversion]
+C:\Users\15104\Desktop\visualproject\Project1\Project1\control_l.cpp(389,61): warning : conversion to ‘float’ from ‘int’ may alter its value [-Wconversion]
+C:\Users\15104\Desktop\visualproject\Project1\Project1\control_l.cpp(394,28): warning : conversion to ‘float’ from ‘int’ may alter its value [-Wconversion]
+C:\Users\15104\Desktop\visualproject\Project1\Project1\control_l.cpp(394,60): warning : conversion to ‘float’ from ‘int’ may alter its value [-Wconversion]
+C:\Users\15104\Desktop\visualproject\Project1\Project1\control_l.cpp(397,24): warning : conversion to ‘float’ from ‘int’ may alter its value [-Wconversion]
+C:\Users\15104\Desktop\visualproject\Project1\Project1\control_l.cpp(397,61): warning : conversion to ‘float’ from ‘int’ may alter its value [-Wconversion]
+C:\Users\15104\Desktop\visualproject\Project1\Project1\control_l.cpp(326,6): warning : unused variable ‘responseTimeout’ [-Wunused-variable]
+C:\Users\15104\Desktop\visualproject\Project1\Project1\control_l.cpp(330,6): warning : unused variable ‘pkgIndex’ [-Wunused-variable]
+C:\Users\15104\Desktop\visualproject\Project1\Project1\control_l.cpp(335,7): warning : unused variable ‘func’ [-Wunused-variable]
+C:\Users\15104\Desktop\visualproject\Project1\Project1\control_l.cpp(341,16): warning : variable ‘origin_position’ set but not used [-Wunused-but-set-variable]
+C:\Users\15104\Desktop\visualproject\Project1\Project1\control_l.cpp(368,8): warning : unused variable ‘brakeCounter’ [-Wunused-variable]
+C:\Users\15104\Desktop\visualproject\Project1\Project1\control_l.cpp(370,8): warning : variable ‘xCmd’ set but not used [-Wunused-but-set-variable]
+C:\Users\15104\Desktop\visualproject\Project1\Project1\control_l.cpp(370,14): warning : variable ‘yCmd’ set but not used [-Wunused-but-set-variable]
+C:\Users\15104\Desktop\visualproject\Project1\Project1\control_l.cpp(370,20): warning : variable ‘zCmd’ set but not used [-Wunused-but-set-variable]
+C:\Users\15104\Desktop\visualproject\Project1\Project1\control_l.cpp(595,14): warning : conversion to ‘DJI::OSDK::float32_t {aka float}’ from ‘double’ may alter its value [-Wfloat-conversion]
+C:\Users\15104\Desktop\visualproject\Project1\Project1\control_l.cpp(596,15): warning : conversion to ‘DJI::OSDK::float32_t {aka float}’ from ‘double’ may alter its value [-Wfloat-conversion]
+C:\Users\15104\Desktop\visualproject\Project1\Project1\control_l.cpp(597,15): warning : conversion to ‘DJI::OSDK::float32_t {aka float}’ from ‘double’ may alter its value [-Wfloat-conversion]
+/usr/local/include/djiosdk/dji_vehicle.hpp(77,12): warning : ‘DJI::OSDK::callbackId’ defined but not used [-Wunused-variable]
+C:\Users\15104\Desktop\visualproject\Project1\Project1\control_l.cpp(275,75): warning : ‘pkgIndex’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+  Linking objects
+  Project1.vcxproj -> C:\Users\15104\Desktop\visualproject\Project1\Project1\bin\ARM\Debug\Project1.out

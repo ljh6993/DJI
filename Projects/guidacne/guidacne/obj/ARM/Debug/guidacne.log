@@ -1,0 +1,16 @@
+﻿  Cleaning remote project directory
+  Validating architecture
+  Validating sources
+  Copying sources remotely to '192.168.137.218'
+  Starting remote build
+  Compiling sources:
+  DJI_utility.cpp
+C:\Users\15104\Documents\Visual Studio 2017\Projects\guidacne\guidacne\DJI_utility.cpp(109,21): warning : statement has no effect [-Wunused-value]
+C:\Users\15104\Documents\Visual Studio 2017\Projects\guidacne\guidacne\DJI_utility.cpp(110,23): warning : statement has no effect [-Wunused-value]
+C:\Users\15104\Documents\Visual Studio 2017\Projects\guidacne\guidacne\DJI_utility.cpp(111,23): warning : statement has no effect [-Wunused-value]
+  main.cpp
+C:\Users\15104\Documents\Visual Studio 2017\Projects\guidacne\guidacne\DJI_guidance.h(189,21): warning : conversion to ‘float’ alters ‘double’ constant value [-Wfloat-conversion]
+C:\Users\15104\Documents\Visual Studio 2017\Projects\guidacne\guidacne\main.cpp(59,15): warning : unused variable ‘data’ [-Wunused-variable]
+C:\Users\15104\Documents\Visual Studio 2017\Projects\guidacne\guidacne\main.cpp(98,11): warning : unused variable ‘m’ [-Wunused-variable]
+  Linking objects
+  guidacne.vcxproj -> C:\Users\15104\Documents\Visual Studio 2017\Projects\guidacne\guidacne\bin\ARM\Debug\guidacne.out

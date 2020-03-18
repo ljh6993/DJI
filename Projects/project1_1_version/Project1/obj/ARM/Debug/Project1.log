@@ -1,0 +1,14 @@
+﻿D:\visualstudioC++\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(387,5): warning MSB8028: The intermediate directory (C:\Users\15104\Documents\Visual Studio 2017\Projects\project1_1_version\Project1\obj\ARM\Debug\) contains files shared from another project (Project1.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  Validating architecture
+  Validating sources
+  Copying sources remotely to '192.168.137.10'
+  Starting remote build
+  Compiling sources:
+  main.cpp
+/usr/local/include/djiosdk/posix_thread.hpp(6,54): warning : "/*" within comment [-Wcomment]
+/usr/local/include/djiosdk/linux_serial_device.hpp(75,3): warning : no return statement in function returning non-void [-Wreturn-type]
+C:\Users\15104\Documents\Visual Studio 2017\Projects\project1_1_version\Project1\flight_control_sample.hpp(73,56): warning : conversion to ‘float’ alters ‘double’ constant value [-Wfloat-conversion]
+C:\Users\15104\Documents\Visual Studio 2017\Projects\project1_1_version\Project1\main.cpp(83,47): warning : conversion to ‘float’ alters ‘double’ constant value [-Wfloat-conversion]
+/usr/local/include/djiosdk/dji_vehicle.hpp(77,12): warning : ‘DJI::OSDK::callbackId’ defined but not used [-Wunused-variable]
+  Linking objects
+  Project1.vcxproj -> C:\Users\15104\Documents\Visual Studio 2017\Projects\project1_1_version\Project1\bin\ARM\Debug\Project1_1.out

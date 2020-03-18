@@ -1,0 +1,4 @@
+app_id : 1057912
+app_key : e0c989eebdb95a618a12e4b88c6e59e618d568ffd12857928ba915d51d7c431d
+device : /dev/ttyS0
+baudrate : 230400
